@@ -32,10 +32,14 @@ const taskSchema = new Schema(
       default: TaskStatusEnum.TODO,
     },
     attachments: {
+      // array to store multiple files url
       type: [
         {
+          // url
           url: String,
+          // filetype
           mimetype: String,
+          // filesize
           size: Number,
         },
       ],

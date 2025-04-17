@@ -13,9 +13,9 @@ const userRegistrationVaildator = () => {
       .notEmpty()
       .withMessage("Username is required")
       .isLength({ min: 3 })
-      .withMessage("username should be at least 3 chars")
+      .withMessage("Username should be at least 3 chars")
       .isLength({ max: 13 })
-      .withMessage("usernmae should not be more than 13 chars"),
+      .withMessage("Username should not be more than 13 chars"),
   ];
 };
 
