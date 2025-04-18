@@ -7,4 +7,14 @@ const registerUser = asyncHandler(async (req, res) => {
   regisrationValidation(body);
 });
 
-export { registerUser };
+export {
+  registerUser,
+  loginUser,
+  logoutUser,
+  verifyEmail,
+  resendVerificationEmail,
+  refreshAccessToken,
+  forgotPasswordRequest,
+  changeCurrentPassword,
+  getCurrentUser,
+};
